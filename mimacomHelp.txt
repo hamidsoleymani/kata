@@ -11,7 +11,12 @@ push an existing repository from the command line
 1) in directory where the repository is do:
 git remote add origin https://github.com/hamidsoleymani/kata.git
 git push -u origin master
+
 origin is a alias for remote repo url
+entweder
+git push https://github.com/hamidsoleymani/kata master
+oder
+git push origin master oder git push
 
 
 --vi--
