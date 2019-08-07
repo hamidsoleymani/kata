@@ -45,7 +45,12 @@ ln -s /Users/name/Downloads /Users/name/Desktop // symbolic link
 ln -s "/Users/name/My Files" "/Users/name/Desktop/My Link" //
 
 --terminal--
-control u deletes line
-controll a jumps to begining of line and then control k deletes line
+control u deletes line to left
+control y recalable the deleted line
+control a jumps to begining of line and then
+control k deletes line to right
 control w only deletes a word
 control c cancels the line
+control h deletes one letter to left
+control e jumps to left
+control l clears entire command prompt
