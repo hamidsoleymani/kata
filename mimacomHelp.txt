@@ -43,3 +43,7 @@ bash-specific and will override .profile if present.
 
 ln -s /Users/name/Downloads /Users/name/Desktop // symbolic link
 ln -s "/Users/name/My Files" "/Users/name/Desktop/My Link" //
+
+--terminal--
+control u deletes line
+controll a jumps to begining of line and then control k deletes line
