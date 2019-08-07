@@ -1,0 +1,38 @@
+--brew--
+brew tap/untap AdoptOpenJDK/openjdk
+brew tap
+brew cask install adoptopenjdk8
+--git--
+git config --global user.email "me@mimacom.com"
+git config --global user.name "Firstname Lastname"
+git config --list //echos what is in .gitconfig
+
+push an existing repository from the command line
+1) in directory where the repository is do:
+git remote add origin https://github.com/hamidsoleymani/kata.git
+git push -u origin master
+
+--vi--
+Quit the vi editor without saving your changes
+1) press esc 2) press : 3) enter q!
+save
+:wq
+--bash--
+/usr/libexec/java_home -V
+
+Occasionally I do have to change the value of JAVA_HOME to an
+earlier version of Java. For example, one program I'm maintaining
+requires 32-bit Java 5 on OS X, so when using that program, I set JAVA_HOME by running:
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.5)
+
+For those of you who don't have java_home in your path add it like this.
+sudo ln -s /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home /usr/libexec/java_home
+
+Add also in ~/.profile:
+export PATH=${JAVA_HOME}/bin:$PATH
+
+.profile works with sh or bash. However .bash_profile is
+bash-specific and will override .profile if present.
+
+ln -s /Users/name/Downloads /Users/name/Desktop // symbolic link
+ln -s "/Users/name/My Files" "/Users/name/Desktop/My Link" //
